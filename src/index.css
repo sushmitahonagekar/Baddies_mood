@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { min-height: 100%; }
+body {
+  font-family: 'Fredoka', system-ui, sans-serif;
+  color: #3b2a5a;
+  background: var(--bg) fixed;
+}
+@media (prefers-reduced-motion: reduce) { * { animation-duration: .01ms !important; } }
+
+/* ---- Cartoon world theme (used by DoraKit.jsx) ---- */
+:root { --a: #1e90ff; --b: #8fd3ff; --bg: linear-gradient(160deg,#e3f4ff,#f6fbff 50%,#d9eeff); --foot: #2a5a8c; }
+.dw-cloud { position: absolute; left: 0; width: 120px; height: 36px; border-radius: 40px; background: #fff; opacity: .7;
+  box-shadow: 30px -14px 0 6px #fff, 60px 0 0 2px #fff; animation: dw-drift linear infinite; }
+@keyframes dw-drift { from { transform: translateX(-220px); } to { transform: translateX(110vw); } }
+.dw-star { position: absolute; color: #ffd23f; font-size: 14px; animation: dw-tw 3s ease-in-out infinite; }
+@keyframes dw-tw { 0%,100% { opacity: .15; transform: scale(.7); } 50% { opacity: 1; transform: scale(1.2); } }
+[data-decor=off] .dw-sky { display: none; }
+[data-calm=on] *, [data-calm=on] *::before { animation-duration: .01ms !important; }
+html.cursor-on, html.cursor-on * { cursor: none !important; }

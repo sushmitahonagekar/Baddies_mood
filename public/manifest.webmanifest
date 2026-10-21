@@ -1,0 +1,13 @@
+{
+  "name": "Baddies Mood",
+  "short_name": "Baddies Mood",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#e3f4ff",
+  "theme_color": "#1e90ff",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
